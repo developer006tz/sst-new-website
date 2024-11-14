@@ -1,6 +1,6 @@
 <template>
     <div>
-      <HomeHeroSection/>
+      <HomeHeroSection />
       <HomeServiceSection/>
       <HomeWhyUsSection/>
       <HomeCtaSection/> 
