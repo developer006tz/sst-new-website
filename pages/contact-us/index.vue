@@ -1,19 +1,10 @@
 <template>
-  <main class="overflow-hidden">
-    <!-- Hero Section -->
-    <section class="relative py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
-      <div class="container">
-        <div 
-          v-motion="hero_text"
-          class="max-w-3xl mx-auto text-center"
-        >
-          <h1 class="text-dark-800">Get in <span class="text-primary">Touch</span></h1>
-          <p class="mt-6 text-lg text-dark-600">
-            We'd love to hear from you. Let's discuss how we can help your business grow
-          </p>
-        </div>
-      </div>
-    </section>
+
+   <CorePageHeading 
+      blackTitle="Get in"
+      blueTitle="Touch"
+      description="We'd love to hear from you. Let's discuss how we can help your business grow"
+    />
 
     <!-- Contact Section -->
     <section class="py-20">
@@ -199,7 +190,6 @@
         </div>
       </div>
     </section>
-  </main>
 </template>
 
 <script setup lang="ts">

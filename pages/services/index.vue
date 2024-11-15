@@ -1,5 +1,4 @@
 <template>
-
      <UiServicesHeading />
      <UiServicesGrid />
      <UiServicesTechnologyStack />
@@ -8,10 +7,12 @@
 </template>
 
 <script setup lang="ts">
-const actionData = {
-  title: 'Ready to Start Your Digital Journey?',
-  description: 'Let\'s discuss how our services can help transform your business.',
-  buttonLabel: 'Schedule a Consultation',
-  style: 'bg-primary'
-};
+import type { CallToAction } from '~/types';
+  const actionData: CallToAction = {
+    title: 'Ready to Start Your Digital Journey?',
+    description: 'Let\'s discuss how our services can help transform your business.',
+    buttonLabel: 'Schedule a Consultation',
+    style: 'bg-primary'
+  };
+
 </script>

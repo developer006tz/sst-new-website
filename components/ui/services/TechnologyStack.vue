@@ -1,5 +1,5 @@
 <template>
-    <section class="py-20 bg-primary">
+    <section class="py-20 bg-primary ">
         <div class="container">
             <div v-motion="reveal" class="text-center max-w-2xl mx-auto mb-16">
                 <h2 class="text-light-400">Our Technology Stack</h2>

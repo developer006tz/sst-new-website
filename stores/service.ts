@@ -123,15 +123,15 @@ export const services: Service[] = [
   
   export const techStacks: TechStack[] = [
     { name: 'React', icon: 'mdi:react' },
+    { name: 'NextJs', icon: 'lineicons:nextjs' },
     { name: 'Vue.js', icon: 'mdi:vuejs' },
     { name: 'Nuxt', icon: 'mdi:nuxt' },
+    { name: 'Flutter', icon: 'material-symbols:flutter' },
     { name: 'Node.js', icon: 'mdi:nodejs' },
-    { name: 'Python', icon: 'mdi:language-python' },
-    { name: 'AWS', icon: 'mdi:aws' },
-    { name: 'Docker', icon: 'mdi:docker' },
     { name: 'Laravel', icon: 'simple-icons:laravel' },
+    { name: 'Django', icon: 'akar-icons:django-fill' },
     { name: 'PostgreSQL', icon: 'simple-icons:postgresql' },
     { name: 'MySQL', icon: 'simple-icons:mysql' },
-    { name: 'Grapql', icon: 'simple-icons:graphql' },
-    { name: 'Redis', icon: 'simple-icons:redis' }
+    { name: 'AWS', icon: 'mdi:aws' },
+    { name: 'Docker', icon: 'mdi:docker' },
   ];

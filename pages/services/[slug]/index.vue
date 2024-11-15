@@ -1,4 +1,3 @@
-<!-- pages/services/[slug]/index.vue -->
 <template>
     <main class="overflow-hidden">
       <!-- Hero Section -->
