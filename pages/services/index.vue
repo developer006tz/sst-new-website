@@ -1,6 +1,6 @@
 <template>
 
-    <UiServicesHeading />
+     <UiServicesHeading />
      <UiServicesGrid />
      <UiServicesTechnologyStack />
     <CoreCalltoAction :action="actionData"/>

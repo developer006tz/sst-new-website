@@ -21,3 +21,11 @@ export interface NavItem {
     duration?: number;
     custom?: Record<string, any>;
   }
+
+  export interface CallToAction {
+    title: string;
+    description: string;
+    buttonLabel: string;
+    style?: string | null;
+  }
+

@@ -28,16 +28,12 @@
 <script setup lang="ts">
 import { slideVisibleBottom } from '@vueuse/motion';
 import { defineProps } from 'vue';
+import type { CallToAction } from '~/types';
 
-interface Action {
-  title: string;
-  description: string;
-  buttonLabel: string;
-  style?: string | null;
-}
+
 defineProps({
   action: {
-    type: Object as () => Action,
+    type: Object as () => CallToAction,
     required: true
   }
 });

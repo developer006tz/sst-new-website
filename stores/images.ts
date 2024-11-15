@@ -1,1 +1,2 @@
 export const logoHorizontal = "https://res.cloudinary.com/dcmwnrvzk/image/upload/v1731661441/logo-social-smarttech_gdjwam.png";
+export const logoMain = "https://res.cloudinary.com/dcmwnrvzk/image/upload/v1731598362/social-smarttech-logo_hvn5fr.png";
