@@ -3,22 +3,7 @@
         <div class="container">
           <div class="text-center max-w-2xl mx-auto mb-16">
             <h2 
-              v-motion="{
-            initial: { 
-              opacity: 0,
-              y: 20,
-              scale: 0.9
-            },
-            visible: { 
-              opacity: 1,
-              y: 0,
-              scale: 1,
-              transition: {
-                duration: 500,
-                ease: 'easeOut'
-              }
-            }
-          }"
+              v-motion="reveal"
               class="text-dark-800"
             >
               Our Services
@@ -32,24 +17,7 @@
             <div 
               v-for="(service, index) in services" 
               :key="index"
-              v-motion="{
-            initial: { y: 100, opacity: 0, scale: 0.9 },
-            visible: { 
-              y: 0,
-              opacity: 1,
-              scale: 1,
-              transition: {
-                duration: 800,
-                ease: 'easeOut'
-              }
-            },
-            hover: {
-              y: -5,
-              transition: {
-                duration: 200
-              }
-            }
-          }"
+              v-motion="card_enter"
               :custom="{ delay: index * 100 }"
               class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all"
             >
@@ -65,6 +33,7 @@
 </template>
 
 <script setup lang="ts">
+import { card_enter, reveal } from '~/lib/motions';
 import type { Service } from '~/types';
 
 

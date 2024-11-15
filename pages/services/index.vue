@@ -1,6 +1,17 @@
 <template>
-    <h1>services</h1>
-  </template>
-  
-  <script setup lang="ts">
-  </script>
+
+    <UiServicesHeading />
+     <UiServicesGrid />
+     <UiServicesTechnologyStack />
+    <CoreCalltoAction :action="actionData"/>
+
+</template>
+
+<script setup lang="ts">
+const actionData = {
+  title: 'Ready to Start Your Digital Journey?',
+  description: 'Let\'s discuss how our services can help transform your business.',
+  buttonLabel: 'Schedule a Consultation',
+  style: 'bg-primary'
+};
+</script>

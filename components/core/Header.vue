@@ -1,9 +1,8 @@
-<!-- components/core/Header.vue -->
 <template>
-  <header v-motion="'slide-down'" class="fixed w-full z-50 bg-white md:bg-white/50 backdrop-blur-lg shadow-sm">
+  <header v-motion="slideTop" class="fixed w-full z-50 bg-white md:bg-white/50 backdrop-blur-lg shadow-sm">
     <nav class="container py-4 flex items-center justify-between">
       <NuxtLink to="/" class="flex items-center space-x-2">
-        <NuxtImg src="https://res.cloudinary.com/dcmwnrvzk/image/upload/v1731598362/social-smarttech-logo_hvn5fr.png"
+        <NuxtImg :src="logoHorizontal"
           alt="SocialSmartTech Logo" width="150" height="50" class="h-12 w-auto" />
       </NuxtLink>
 
@@ -35,38 +34,12 @@
         <div class="container py-4 space-y-4">
           <NuxtLink v-for="item in navItems" :key="item.path" :to="item.path"
             class="block font-medium text-dark-600 hover:text-primary transition-colors py-2"
-            @click="isMenuOpen = false" v-motion="{
-              initial: { opacity: 0, y: 40 },
-              visible: {
-                opacity: 1,
-                y: 0,
-                transition: {
-                  duration: 800,
-                  ease: 'easeOut'
-                }
-              }
-            }">
+            @click="isMenuOpen = false" v-motion="slide_left">
             {{ item.name }}
           </NuxtLink>
           <NuxtLink :to="'contact-us'"
             class="block w-full btn bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-600 transition-colors text-center"
-            @click="isMenuOpen = false" v-motion="{
-              initial: { scale: 0.5, opacity: 0 },
-              visible: {
-                scale: 1,
-                opacity: 1,
-                transition: {
-                  duration: 600,
-                  ease: 'easeOut'
-                }
-              },
-              hover: {
-                scale: 1.05,
-                transition: {
-                  duration: 300
-                }
-              }
-            }">
+            @click="isMenuOpen = false" v-motion="bounce_in">
             Contact Us
           </NuxtLink>
         </div>
@@ -79,6 +52,9 @@
 import type { NavItem } from '~/types';
 import { ref } from 'vue';
 import { onClickOutside, onKeyStroke } from '@vueuse/core';
+import { logoHorizontal } from '~/stores/images';
+import { slideTop } from '@vueuse/motion';
+import { bounce_in, slide_left } from '~/lib/motions';
 
 const isMenuOpen = ref(false);
 

@@ -1,17 +1,11 @@
+<script setup lang="ts">
+import { fade_in } from '~/lib/motions';
+</script>
+
 <template>
-    <section class="py-20 bg-primary">
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary  text-center text-white">
         <div 
-          v-motion="{
-            initial: { opacity: 0, y: 40 },
-            visible: { 
-              opacity: 1, 
-              y: 0,
-              transition: { 
-                duration: 800,
-                ease: 'easeOut'
-              }
-            }
-          }"
+          v-motion="fade_in"
           class="container text-center text-white"
         >
           <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>

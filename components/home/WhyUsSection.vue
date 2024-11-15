@@ -3,17 +3,7 @@
         <div class="container">
           <div class="grid md:grid-cols-2 gap-12 items-center">
             <div 
-              v-motion="{
-            initial: { x: 100, opacity: 0 },
-            visible: { 
-              x: 0,
-              opacity: 1,
-              transition: {
-                duration: 700,
-                ease: 'easeOut'
-              }
-            }
-          }"
+              v-motion="slide_right"
               class="space-y-6"
             >
               <h2 class="text-dark-800">Why Choose SocialSmartTech?</h2>
@@ -30,18 +20,7 @@
               </div>
             </div>
             <div 
-              v-motion="{
-            initial: { scale: 0, opacity: 0 },
-            visible: { 
-              scale: 1,
-              opacity: 1,
-              transition: {
-                type: 'spring',
-                stiffness: 100,
-                damping: 15
-              }
-            }
-          }"
+              v-motion="bounce_in"
               class="relative"
             >
               <!-- i will Add an appropriate image later here -->
@@ -52,6 +31,7 @@
 </template>
 
 <script setup lang="ts">
+import { bounce_in, slide_right } from '~/lib/motions';
 import type { Feature } from '~/types';
   
   const features: Feature[] = [
