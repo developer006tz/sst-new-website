@@ -1,10 +1,10 @@
 <template>
-  <header v-motion="slideTop" class="fixed w-full z-50">
+  <header v-motion="slideTop" class="fixed w-full z-50 backdrop-blur-xl md:backdrop-blur-none">
 
-    <nav class="container py-4 flex items-center justify-between bg-white/0 md:bg-white/10 backdrop-blur-0  md:backdrop-blur-3xl backdrop-filter-none md:backdrop-filter rounded-full mt-4 relative">
+    <nav class="container py-1 flex items-center justify-between bg-white/0 md:bg-white/10 backdrop-blur-0  md:backdrop-blur-3xl backdrop-filter-none md:backdrop-filter rounded-full mt-4 relative">
       <NuxtLink to="/" class="flex items-center space-x-2 relative">
-        <NuxtImg :src="logoHorizontal"
-          alt="SocialSmartTech Logo" width="150" height="50" class="h-12 w-auto" />
+        <NuxtImg :src="logoMain"
+          alt="SocialSmartTech Logo" width="64" height="64" class="h-16 w-auto" />
       </NuxtLink>
 
       <!-- Desktop Menu -->
@@ -31,10 +31,10 @@
       enter-to-class="opacity-100 translate-y-0" leave-active-class="transition duration-150 ease-in"
       leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-4">
       <div v-if="isMenuOpen"
-        class="md:hidden absolute top-full left-0 w-full bg-white backdrop-blur-lg shadow-lg border-t border-gray-100">
+        class="md:hidden absolute top-full left-0 w-full bg-dark-950 backdrop-blur-lg backdrop-filter shadow-lg border-t border-dark-900">
         <div class="container py-4 space-y-4">
           <NuxtLink v-for="item in navItems" :key="item.path" :to="item.path"
-            class="block font-medium text-dark-600 hover:text-primary transition-colors py-2"
+            class="block font-medium text-dark-500 hover:text-primary transition-colors py-2"
             @click="isMenuOpen = false" v-motion="slide_left">
             {{ item.name }}
           </NuxtLink>
@@ -53,7 +53,7 @@
 import type { NavItem } from '~/types';
 import { ref } from 'vue';
 import { onClickOutside, onKeyStroke } from '@vueuse/core';
-import { logoHorizontal } from '~/stores/images';
+import {  logoMain } from '~/stores/images';
 import { slideTop } from '@vueuse/motion';
 import { bounce_in, slide_left } from '~/lib/motions';
 
