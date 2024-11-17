@@ -4,13 +4,10 @@ import { milestones } from '~/stores/about-us';
 </script>
 
 <template>
-      <section class="py-20 bg-light-300">
+  <section class="py-20 ">
     <div class="container">
-      <div 
-        v-motion="reveal"
-        class="text-center max-w-2xl mx-auto mb-16"
-      >
-        <h2 class="text-dark-800">Our Journey</h2>
+      <div v-motion="reveal" class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-light-300">Our Journey</h2>
         <p class="mt-4 text-dark-600">
           Key milestones that shaped our success
         </p>
@@ -22,15 +19,11 @@ import { milestones } from '~/stores/about-us';
 
         <!-- Timeline Items -->
         <div class="space-y-16">
-          <div 
-            v-for="(milestone, index) in milestones" 
-            :key="milestone.year"
-            v-motion="fade_in"
-            :custom="{ delay: index * 100 }"
-            class="relative"
-          >
+          <div v-for="(milestone, index) in milestones" :key="milestone.year" v-motion="fade_in"
+            :custom="{ delay: index * 100 }" class="relative">
             <!-- Timeline Dot -->
-            <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full"></div>
+            <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full">
+            </div>
 
             <!-- Content -->
             <div class="grid md:grid-cols-2 gap-8 items-center">

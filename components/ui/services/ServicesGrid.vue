@@ -7,7 +7,7 @@
             :key="service.id"
             v-motion="card_enter"
             :custom="{ delay: index * 100 }"
-            class="group p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+            class="group p-6 glass-effect rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
               <Icon 
@@ -15,13 +15,13 @@
                 class="w-8 h-8 text-primary"
               />
             </div>
-            <h3 class="text-xl font-semibold mb-4">{{ service.title }}</h3>
-            <p class="text-dark-600 mb-6">{{ service.description }}</p>
+            <h3 class="text-xl font-semibold text-light-300 mb-4">{{ service.title }}</h3>
+            <p class="text-dark-500 mb-6">{{ service.description }}</p>
             <ul class="space-y-3">
               <li 
                 v-for="feature in service.features" 
                 :key="feature"
-                class="flex items-center text-dark-600"
+                class="flex items-center text-dark-500"
               >
                 <Icon name="mdi:check-circle" class="w-5 h-5 text-primary mr-2" />
                 {{ feature }}

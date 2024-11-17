@@ -1,7 +1,7 @@
 <template>
   <header v-motion="slideTop" class="fixed w-full z-50">
 
-    <nav class="container py-4 flex items-center justify-between md:bg-white/10  md:backdrop-blur-3xl md:backdrop-filter rounded-full mt-4 relative">
+    <nav class="container py-4 flex items-center justify-between bg-white/0 md:bg-white/10 backdrop-blur-0  md:backdrop-blur-3xl backdrop-filter-none md:backdrop-filter rounded-full mt-4 relative">
       <NuxtLink to="/" class="flex items-center space-x-2 relative">
         <NuxtImg :src="logoHorizontal"
           alt="SocialSmartTech Logo" width="150" height="50" class="h-12 w-auto" />

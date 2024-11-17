@@ -31,7 +31,7 @@
   }
   
   .glass-effect {
-    @apply bg-white/10 backdrop-blur-lg;
+    @apply bg-white/5 backdrop-blur-3xl backdrop-filter;
   }
 
   .btn {

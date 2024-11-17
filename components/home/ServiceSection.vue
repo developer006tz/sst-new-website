@@ -1,10 +1,10 @@
 <template>
-    <section class="py-20 bg-light-300">
+    <section class="py-20 ">
         <div class="container">
           <div class="text-center max-w-2xl mx-auto mb-16">
             <h2 
               v-motion="reveal"
-              class="text-dark-800"
+              class="text-light-300"
             >
               Our Services
             </h2>
@@ -19,12 +19,12 @@
               :key="index"
               v-motion="card_enter"
               :custom="{ delay: index * 100 }"
-              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all"
+              class="glass-effect p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all"
             >
               <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
                 <Icon :name="service.icon" class="w-7 h-7 text-primary"/>
               </div>
-              <h3 class="text-xl font-semibold mb-4">{{ service.title }}</h3>
+              <h3 class="text-xl font-semibold mb-4 text-light-200">{{ service.title }}</h3>
               <p class="text-dark-600">{{ service.description }}</p>
             </div>
           </div>
