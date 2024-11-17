@@ -1,7 +1,8 @@
 <template>
-  <header v-motion="slideTop" class="fixed w-full z-50 bg-white md:bg-white/50 backdrop-blur-lg shadow-sm">
-    <nav class="container py-4 flex items-center justify-between">
-      <NuxtLink to="/" class="flex items-center space-x-2">
+  <header v-motion="slideTop" class="fixed w-full z-50">
+
+    <nav class="container py-4 flex items-center justify-between md:bg-white/10  md:backdrop-blur-3xl md:backdrop-filter rounded-full mt-4 relative">
+      <NuxtLink to="/" class="flex items-center space-x-2 relative">
         <NuxtImg :src="logoHorizontal"
           alt="SocialSmartTech Logo" width="150" height="50" class="h-12 w-auto" />
       </NuxtLink>
@@ -9,11 +10,11 @@
       <!-- Desktop Menu -->
       <div class="hidden md:flex items-center space-x-8">
         <NuxtLink v-for="item in navItems" :key="item.path" :to="item.path"
-          class="font-medium text-dark-600 hover:text-primary transition-colors">
+          class="font-medium text-white hover:text-primary transition-colors">
           {{ item.name }}
         </NuxtLink>
         <NuxtLink :to="'contact-us'"
-          class="btn bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-600 transition-colors">
+          class="btn bg-primary text-white px-6 py-2 rounded-full hover:bg-primary-600 transition-colors">
           Contact Us
         </NuxtLink>
       </div>
