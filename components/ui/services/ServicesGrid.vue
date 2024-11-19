@@ -27,13 +27,13 @@
                 {{ feature }}
               </li>
             </ul>
-            <NuxtLink 
+            <!-- <NuxtLink 
               :to="service.link"
               class="mt-8 inline-flex items-center text-primary hover:text-primary-600 transition-colors"
             >
               Learn more
               <Icon name="mdi:arrow-right" class="w-5 h-5 ml-1" />
-            </NuxtLink>
+            </NuxtLink> -->
           </div>
         </div>
       </div>

@@ -24,22 +24,27 @@
               leave-from="opacity-100 scale-100"
               leave-to="opacity-0 scale-95"
             >
-              <DialogPanel class="w-full max-w-3xl bg-white rounded-2xl overflow-hidden">
+              <DialogPanel class="w-full max-w-3xl bg-dark-950 rounded-2xl overflow-hidden">
                 <div v-if="project" class="relative">
                   <!-- Project Image -->
-                  <div class="relative aspect-video">
+                  <div class="relative aspect-[4/3] p-2">
                     <NuxtImg :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
                   </div>
   
                   <!-- Content -->
-                  <div class="p-8">
-                    <h3 class="text-2xl font-semibold mb-4">{{ project.title }}</h3>
+                  <div class="px-8">
+                    <div class="flex">
+                        <h3 class="text-2xl text-primary font-semibold mb-4">{{ project.title }}</h3>
+                    <a :href="project.link" target="_blank" class="text-sm text-dark-600 font-normal">
+                            <Icon name="mdi:link" class="w-8 h-8 inline-block ml-2" />
+                        </a>
+                    </div>
                     <p class="text-dark-600 mb-6">{{ project.description }}</p>
   
                     <!-- Project Details -->
                     <div class="grid md:grid-cols-2 gap-6">
                       <div>
-                        <h4 class="font-semibold mb-2">Technologies Used</h4>
+                        <h4 class="font-semibold text-primary mb-2">Technologies Used</h4>
                         <div class="flex flex-wrap gap-2">
                           <span
                             v-for="tech in project.technologies"
@@ -52,7 +57,7 @@
                       </div>
   
                       <div>
-                        <h4 class="font-semibold mb-2">Project Details</h4>
+                        <h4 class="font-semibold text-primary mb-2">Project Details</h4>
                         <ul class="space-y-2 text-dark-600">
                           <li>
                             <span class="font-medium">Client:</span> {{ project.client }}
@@ -69,7 +74,7 @@
   
                     <!-- Key Features -->
                     <div class="mt-6">
-                      <h4 class="font-semibold mb-2">Key Features</h4>
+                      <h4 class="font-semibold text-primary mb-2">Key Features</h4>
                       <ul class="grid md:grid-cols-2 gap-4">
                         <li
                           v-for="feature in project.features"
@@ -86,7 +91,7 @@
                   <!-- Close Button -->
                   <button
                     @click="$emit('update:modelValue', false)"
-                    class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/80 backdrop-blur flex items-center justify-center hover:bg-white transition-colors"
+                    class="absolute top-4 right-4 w-10 h-10 rounded-full bg-primary/50 backdrop-blur flex items-center justify-center hover:bg-white transition-colors"
                   >
                     <Icon name="mdi:close" class="w-6 h-6" />
                   </button>

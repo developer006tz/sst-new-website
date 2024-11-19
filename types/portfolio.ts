@@ -10,6 +10,7 @@ export interface Project {
     technologies: string[];
     features: string[];
     category: string;
+    link: string;
   }
 
   export interface Category {

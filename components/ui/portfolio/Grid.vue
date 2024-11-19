@@ -3,9 +3,9 @@
       <div class="container">
         <TransitionGroup tag="div" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" name="portfolio">
           <div v-for="project in projects" :key="project.id" v-motion="fade_in" class="group">
-            <div class="relative overflow-hidden rounded-2xl bg-white shadow-lg">
+            <div class="relative overflow-hidden rounded-2xl bg-primary/10 shadow-lg">
               <!-- Project Image -->
-              <div class="relative aspect-[4/3] overflow-hidden">
+              <div class="relative aspect-[4/3] overflow-hidden p-2">
                 <NuxtImg 
                   :src="project.image" 
                   :alt="project.title"
