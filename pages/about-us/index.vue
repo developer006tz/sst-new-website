@@ -6,7 +6,7 @@
     />
      <UiAboutOurStory />
      <UiAboutOurValues />
-     <UiAboutOurTeam />
+     <!-- <UiAboutOurTeam /> -->
      <UiAboutStats />
      <UiAboutTimeline />
      <UiAboutTestimonials />

@@ -19,7 +19,7 @@
             <div>
               <h3 class="font-semibold text-lg text-light-300 group-hover:text-primary transition-colors">Our Location
               </h3>
-              <p class="text-dark-600 mt-2">POSTA MPYA, LIFE HOUSE 3rd Floor,<br />Dar es Salaam, Tanzania</p>
+              <p class="text-dark-500 mt-2">POSTA MPYA, LIFE HOUSE 3rd Floor,<br />Dar es Salaam, Tanzania</p>
               <a href="https://maps.google.com" target="_blank"
                 class="inline-flex items-center text-primary mt-3 hover:text-primary-600">
                 <span>Get Directions</span>
@@ -38,7 +38,7 @@
             </div>
             <div>
               <h3 class="font-semibold text-lg text-light-300 group-hover:text-primary transition-colors">Phone</h3>
-              <p class="text-dark-600 mt-2">+255 683 641 567</p>
+              <p class="text-dark-500 mt-2">+255 683 641 567</p>
               <a href="tel:+255683641567" class="inline-flex items-center text-primary mt-3 hover:text-primary-600">
                 <span>Call Now</span>
                 <Icon name="mdi:arrow-right" class="w-4 h-4 ml-1" />
@@ -56,7 +56,7 @@
             </div>
             <div>
               <h3 class="font-semibold text-lg text-light-300 group-hover:text-primary transition-colors">Email</h3>
-              <p class="text-dark-600 mt-2">developer@socialsmarttech.com</p>
+              <p class="text-dark-500 mt-2">developer@socialsmarttech.com</p>
               <a href="mailto:developer@socialsmarttech.com"
                 class="inline-flex items-center text-primary mt-3 hover:text-primary-600">
                 <span>Send Email</span>

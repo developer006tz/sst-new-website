@@ -50,7 +50,7 @@ export const companyValues: CompanyValue[] = [
   
   export const milestones: Milestone[] = [
     {
-      year: '2020',
+      year: '2019',
       title: 'Company Founded',
       description: 'SocialSmartTech was established with a vision to transform businesses through technology.'
     },
@@ -61,63 +61,63 @@ export const companyValues: CompanyValue[] = [
     },
     {
       year: '2022',
-      title: 'Team Expansion',
-      description: 'Grew our team to 15+ professionals and opened our new office in Dar es Salaam.'
+      title: 'Interprise Software Development',
+      description: 'Expanded our services to include custom software development for small , medium-sized businesses to large enterprises.'
     },
     {
-      year: '2023',
-      title: 'Regional Recognition',
-      description: 'Recognized as one of the fastest-growing tech companies in East Africa.'
+      year: '2024',
+      title: 'Fastest-Growing Tech Company',
+      description: 'Recognized as one of the fastest-growing technology companies in the region.'
     }
   ];
   
   export const testimonials: Testimonial[] = [
     {
       content: "SocialSmartTech transformed our logistics operations with their innovative software solutions. Their team's expertise and dedication to quality are outstanding.",
-      name: "Sarah Johnson",
-      position: "Operations Director",
-      company: "Global Logistics Ltd",
+      name: "Elisante Kanza",
+      position: "Manager",
+      company: "Conveyance Logistics",
       avatar: "/api/placeholder/100/100"
     },
     {
-      content: "Working with SocialSmartTech has been a game-changer for our business. Their custom software solutions have significantly improved our efficiency.",
-      name: "Michael Chen",
-      position: "CEO",
-      company: "Tech Solutions Inc",
+      content: "My company's brand identity website was completely transformed by SocialSmartTech's web development team. They delivered a fresh, modern look that perfectly represents our values.",
+      name: "Michael Kapinga",
+      position: "Brand Identity Manager",
+      company: "KapingaDesigns",
       avatar: "/api/placeholder/100/100"
     },
     {
-      content: "The team's technical expertise and commitment to delivering quality solutions sets them apart. They're not just vendors, but true technology partners.",
-      name: "David Williams",
-      position: "IT Manager",
-      company: "Express Shipping Co",
+      content: "My company's brand identity website and its cms was accomplished by SocialSmartTech's team. They are very professional and through new tech they are using, they delivered a fresh, modern look that perfectly represents our values.",
+      name: "Lambert Nyembo",
+      position: "Manager",
+      company: "Congo Tanzania Mining Consultancy",
       avatar: "/api/placeholder/100/100"
     }
   ];
   
   export const partners: Partner[] = [
     {
-      name: "Company 1",
-      logo: "/api/placeholder/200/100"
+      name: "Ctmcl",
+      logo: "/images/clients/ctmcl-company-initial-and-long-name-720x225.png"
     },
     {
-      name: "Company 2",
-      logo: "/api/placeholder/200/100"
+      name: "Mwancelele Insurance",
+      logo: "/images/clients/mwancelele-insurance.png"
     },
     {
       name: "Company 3",
-      logo: "/api/placeholder/200/100"
+      logo: "/images/clients/way-impex.jpg"
     },
     {
-      name: "Company 4",
-      logo: "/api/placeholder/200/100"
+      name: "Conveyance Logistics",
+      logo: "/images/clients/conveyance-logistics.png"
     },
     {
-      name: "Company 5",
-      logo: "/api/placeholder/200/100"
+      name: "Kapinga Designs",
+      logo: "/images/clients/kapinga-designs-brand-logo.png"
     },
     {
-      name: "Company 6",
-      logo: "/api/placeholder/200/100"
+      name: "Huku Events",
+      logo: "/images/clients/huku-events.jpg"
     }
   ];

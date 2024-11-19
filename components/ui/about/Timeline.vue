@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { fade_in, reveal } from '~/lib/motions';
 import { milestones } from '~/stores/about-us';
+import { techBackground } from '~/stores/images';
 </script>
 
 <template>
@@ -8,7 +9,7 @@ import { milestones } from '~/stores/about-us';
     <div class="container">
       <div v-motion="reveal" class="text-center max-w-2xl mx-auto mb-16">
         <h2 class="text-light-300">Our Journey</h2>
-        <p class="mt-4 text-dark-600">
+        <p class="mt-4 text-dark-500">
           Key milestones that shaped our success
         </p>
       </div>
@@ -28,14 +29,15 @@ import { milestones } from '~/stores/about-us';
             <!-- Content -->
             <div class="grid md:grid-cols-2 gap-8 items-center">
               <div :class="index % 2 === 0 ? 'md:text-right' : 'md:order-2'">
-                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                <div class="bg-light-400 p-6 rounded-2xl shadow-lg">
                   <span class="text-primary font-bold text-lg">{{ milestone.year }}</span>
                   <h3 class="text-xl font-semibold mt-2">{{ milestone.title }}</h3>
-                  <p class="text-dark-600 mt-2">{{ milestone.description }}</p>
+                  <p class="text-dark-500 mt-2">{{ milestone.description }}</p>
                 </div>
               </div>
               <div class="md:col-span-1" :class="index % 2 === 0 ? 'md:order-2' : ''">
                 <!-- Placeholder for potential images -->
+                 <!-- <NuxtImg :src="techBackground" alt="Milestone" class="w-full h-auto rounded-2xl shadow-lg" /> -->
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@
             <Icon :name="service?.icon ?? 'default-icon'" class="w-10 h-10 text-primary" />
           </div>
           <h1 class="text-light-300">{{ service?.title }}</h1>
-          <p class="mt-6 text-lg text-dark-600">{{ service?.description }}</p>
+          <p class="mt-6 text-lg text-dark-500">{{ service?.description }}</p>
         </div>
       </div>
 
@@ -24,7 +24,7 @@
       <div class="container">
         <div v-motion="reveal" class="text-center max-w-2xl mx-auto mb-16">
           <h2 class="text-light-300">Key Benefits</h2>
-          <p class="mt-4 text-dark-600">Why choose our {{ service?.title }} service</p>
+          <p class="mt-4 text-dark-500">Why choose our {{ service?.title }} service</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
@@ -34,7 +34,7 @@
               <Icon :name="benefit.icon" class="w-7 h-7 text-primary" />
             </div>
             <h3 class="text-xl font-semibold mb-4">{{ benefit.title }}</h3>
-            <p class="text-dark-600">{{ benefit.description }}</p>
+            <p class="text-dark-500">{{ benefit.description }}</p>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@
       <div class="container">
         <div v-motion="reveal" class="text-center max-w-2xl mx-auto mb-16">
           <h2 class="text-light-300">Our Process</h2>
-          <p class="mt-4 text-dark-600">How we deliver exceptional results</p>
+          <p class="mt-4 text-dark-500">How we deliver exceptional results</p>
         </div>
 
         <div class="relative">
@@ -63,7 +63,7 @@
 
               <div class="bg-white p-6 rounded-2xl shadow-lg text-center">
                 <h3 class="text-lg font-semibold mb-4">{{ step.title }}</h3>
-                <p class="text-dark-600">{{ step.description }}</p>
+                <p class="text-dark-500">{{ step.description }}</p>
               </div>
             </div>
           </div>
@@ -83,7 +83,7 @@
               </div>
               <div>
                 <h3 class="text-lg font-semibold mb-2">{{ feature.title }}</h3>
-                <p class="text-dark-600">{{ feature.description }}</p>
+                <p class="text-dark-500">{{ feature.description }}</p>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@
       <div class="container">
         <div v-motion="reveal" class="text-center max-w-2xl mx-auto mb-16">
           <h2 class="text-light-300">Technologies We Use</h2>
-          <p class="mt-4 text-dark-600">Best-in-class technologies for optimal results</p>
+          <p class="mt-4 text-dark-500">Best-in-class technologies for optimal results</p>
         </div>
 
         <div class="grid md:grid-cols-4 gap-8">
@@ -113,7 +113,7 @@
             <Icon :name="tech.icon"
               class="w-12 h-12 mx-auto mb-4 text-primary group-hover:scale-110 transition-transform" />
             <h3 class="font-semibold mb-2">{{ tech.name }}</h3>
-            <p class="text-sm text-dark-600">{{ tech.description }}</p>
+            <p class="text-sm text-dark-500">{{ tech.description }}</p>
           </div>
         </div>
       </div>
@@ -124,7 +124,7 @@
       <div class="container">
         <div v-motion="reveal" class="text-center max-w-2xl mx-auto mb-16">
           <h2 class="text-light-300">Frequently Asked Questions</h2>
-          <p class="mt-4 text-dark-600">Common questions about our {{ service?.title }} service</p>
+          <p class="mt-4 text-dark-500">Common questions about our {{ service?.title }} service</p>
         </div>
 
         <div class="max-w-3xl mx-auto">
@@ -136,7 +136,7 @@
                 <span>{{ faq.question }}</span>
                 <Icon :name="open ? 'mdi:chevron-up' : 'mdi:chevron-down'" class="w-5 h-5 text-primary" />
               </DisclosureButton>
-              <DisclosurePanel class="px-6 py-4 text-dark-600">
+              <DisclosurePanel class="px-6 py-4 text-dark-500">
                 {{ faq.answer }}
               </DisclosurePanel>
             </Disclosure>
@@ -150,7 +150,7 @@
       <div class="container">
         <div v-motion="reveal" class="text-center max-w-2xl mx-auto mb-16">
           <h2 class="text-light-300">Related Services</h2>
-          <p class="mt-4 text-dark-600">Explore our other services</p>
+          <p class="mt-4 text-dark-500">Explore our other services</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
@@ -160,7 +160,7 @@
               <Icon :name="getServiceIcon(relatedSlug)" class="w-7 h-7 text-primary" />
             </div>
             <h3 class="text-xl font-semibold mb-4">{{ getServiceTitle(relatedSlug) }}</h3>
-            <p class="text-dark-600">{{ getServiceDescription(relatedSlug) }}</p>
+            <p class="text-dark-500">{{ getServiceDescription(relatedSlug) }}</p>
           </NuxtLink>
         </div>
       </div>

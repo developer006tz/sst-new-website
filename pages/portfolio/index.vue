@@ -6,7 +6,7 @@
       <div class="container">
         <div v-motion="hero_text" class="max-w-3xl mx-auto text-center">
           <h1 class="text-light-300">Our <span class="text-primary">Portfolio</span></h1>
-          <p class="mt-6 text-lg text-dark-600">
+          <p class="mt-6 text-lg text-dark-500">
             Explore our successful projects and innovative solutions
           </p>
         </div>
@@ -21,7 +21,7 @@
             class="px-6 py-2 rounded-full transition-all duration-300" :class="[
               activeCategory === category
                 ? 'bg-primary text-white shadow-lg'
-                : ' text-dark-600 hover:bg-light-400'
+                : ' text-dark-500 hover:bg-light-400'
             ]">
             {{ category }}
           </button>
@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="flex items-center justify-between">
-                  <span class="text-dark-600">{{ project.type }}</span>
+                  <span class="text-dark-500">{{ project.type }}</span>
                   <button @click="openProjectDetails(project)"
                     class="flex items-center text-primary hover:text-primary-600 transition-colors">
                     View Details
@@ -98,7 +98,7 @@
                   <!-- Content -->
                   <div class="p-8">
                     <h3 class="text-2xl font-semibold mb-4">{{ selectedProject.title }}</h3>
-                    <p class="text-dark-600 mb-6">{{ selectedProject.description }}</p>
+                    <p class="text-dark-500 mb-6">{{ selectedProject.description }}</p>
 
                     <!-- Project Details -->
                     <div class="grid md:grid-cols-2 gap-6">
@@ -114,7 +114,7 @@
 
                       <div>
                         <h4 class="font-semibold mb-2">Project Details</h4>
-                        <ul class="space-y-2 text-dark-600">
+                        <ul class="space-y-2 text-dark-500">
                           <li>
                             <span class="font-medium">Client:</span> {{ selectedProject.client }}
                           </li>
@@ -133,7 +133,7 @@
                       <h4 class="font-semibold mb-2">Key Features</h4>
                       <ul class="grid md:grid-cols-2 gap-4">
                         <li v-for="feature in selectedProject.features" :key="feature"
-                          class="flex items-center text-dark-600">
+                          class="flex items-center text-dark-500">
                           <Icon name="mdi:check-circle" class="w-5 h-5 text-primary mr-2" />
                           {{ feature }}
                         </li>

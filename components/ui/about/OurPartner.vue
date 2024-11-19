@@ -2,8 +2,8 @@
   <section class="py-20 ">
     <div class="container">
       <div v-motion="reveal" class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="text-light-300">Our Partners</h2>
-        <p class="mt-4 text-dark-600">
+        <h2 class="text-light-300">Our Clients</h2>
+        <p class="mt-4 text-dark-500">
           Trusted by leading companies across industries
         </p>
       </div>

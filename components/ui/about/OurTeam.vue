@@ -8,7 +8,7 @@ import { teamMembers } from '~/stores/about-us';
     <div class="container">
       <div v-motion="reveal" class="text-center max-w-2xl mx-auto mb-16">
         <h2 class="text-light-300">Our Team</h2>
-        <p class="mt-4 text-dark-600">
+        <p class="mt-4 text-dark-500">
           Meet the experts behind our success
         </p>
       </div>

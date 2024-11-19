@@ -9,12 +9,12 @@ import { logoMain } from '~/stores/images';
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div v-motion="slide_right" class="space-y-6">
           <h2 class="text-light-300">Our Story</h2>
-          <p class="text-dark-600">
+          <p class="text-dark-500">
             Founded in 2019, SocialSmartTech emerged from a vision to bridge the gap between complex business challenges
             and innovative technology solutions. Our journey began with a focus on logistics software and has since
             expanded to encompass a wide range of digital transformation services.
           </p>
-          <p class="text-dark-600">
+          <p class="text-dark-500">
             Today, we're proud to serve businesses across East Africa, helping them leverage technology to achieve their
             goals and stay ahead in an increasingly digital world.
           </p>

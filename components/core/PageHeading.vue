@@ -17,7 +17,7 @@ const props = defineProps<HeadingProps>();
     <div class="container">
       <div v-motion="hero_text" class="max-w-3xl mx-auto text-center">
         <h1 class="text-light-300">{{ props.blackTitle }} <span class="text-primary">{{ props.blueTitle }}</span></h1>
-        <p class="mt-6 text-lg text-dark-600">
+        <p class="mt-6 text-lg text-dark-500">
           {{ props.description }}
         </p>
       </div>

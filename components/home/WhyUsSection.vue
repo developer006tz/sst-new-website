@@ -11,7 +11,7 @@
               </div>
               <div>
                 <h4 class="font-semibold text-light mb-2">{{ feature.title }}</h4>
-                <p class="text-dark-600">{{ feature.description }}</p>
+                <p class="text-dark-500">{{ feature.description }}</p>
               </div>
             </div>
           </div>
