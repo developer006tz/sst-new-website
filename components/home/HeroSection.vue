@@ -3,10 +3,7 @@ import { fade_in, hero_text, slide_left, zoom_in } from '~/lib/motions';
 </script>
 
 <template>
-    <section class="relative py-20 md:py-32 overflow-hidden bg-dark-950">
-        <NuxtImg
-            src="https://cdn.prod.website-files.com/6700ee976677a42722839678/670125a84a2baa1b2f1e63c3_Hero%20Section%20BG%20Lines-p-2600.png"
-            alt="Hero Section BG Lines" class="absolute top-0 w-full h-96 object-cover" />
+    <section class="relative py-20 md:py-32 overflow-hidden ">
         <div class="container">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6">

@@ -1,4 +1,5 @@
 <template>
+   <CoreBgImage />
    <CorePageHeading 
       blackTitle="Get in"
       blueTitle="Touch"

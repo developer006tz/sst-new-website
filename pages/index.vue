@@ -1,8 +1,7 @@
 <template>
-    <div class="relative">
+      <CoreBgImage />
       <HomeHeroSection />
       <HomeServiceSection/>
       <HomeWhyUsSection/>
       <HomeCtaSection/> 
-    </div>
   </template>

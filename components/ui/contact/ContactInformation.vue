@@ -5,7 +5,7 @@
     <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
     <div class="absolute bottom-0 left-0 w-32 h-32 bg-secondary/10 rounded-full blur-2xl"></div>
 
-    <div class="relative bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-3xl shadow-xl border border-white/20">
+    <div class="relative bg-dark-950 backdrop-blur-xl p-8 md:p-12 rounded-3xl shadow-xl border border-white/20">
       <h2 class="text-2xl font-semibold mb-8 text-light-300">Stay Connected</h2>
 
       <div class="space-y-8">
@@ -30,7 +30,7 @@
         </div>
 
         <!-- Phone Card -->
-        <div class="group bg-white/50 p-6 rounded-2xl hover:shadow-lg transition-all">
+        <div class="group bg-dark-950 p-6 rounded-2xl hover:shadow-lg transition-all">
           <div class="flex items-start gap-6">
             <div
               class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">

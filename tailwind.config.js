@@ -48,6 +48,9 @@ export default {
           950: "#060617",
           DEFAULT: '#212121',
         },
+        sst: {
+          DEFAULT: '#ffffff0d',
+        }
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

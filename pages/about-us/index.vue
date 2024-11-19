@@ -1,4 +1,5 @@
 <template>
+  <CoreBgImage />
     <CorePageHeading 
       blackTitle="About"
       blueTitle="SocialSmartTech"

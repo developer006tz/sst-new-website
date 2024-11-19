@@ -1,7 +1,7 @@
 <template>
   <header v-motion="slideTop" class="fixed w-full z-50 top-0 transform-gpu">
     <nav class="container mx-auto py-1 px-4 flex items-center justify-between 
-              bg-white/10 md:bg-[#0C1020] backdrop-blur-ld
+              bg-white/10 md:bg-[#0C1020] backdrop-blur-lg md:border border-sst
              rounded-full mt-4 relative">
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center space-x-2 relative">
