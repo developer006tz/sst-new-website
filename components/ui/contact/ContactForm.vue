@@ -31,13 +31,13 @@ const handleSubmit = async () => {
 <template>
   <div v-motion="slide_right" class="relative">
     <!-- Decorative background elements -->
-    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl"></div>
-    <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
-    <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-primary/40 to-secondary/40 rounded-3xl"></div>
+    <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/40 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary/40 rounded-full blur-3xl"></div>
 
-    <div class="relative bg-dark-950 backdrop-blur-xl p-8 md:p-12 rounded-3xl shadow-xl border border-white/20">
+    <div class="relative bg-dark-950/90 backdrop-blur-xl p-8 md:p-12 rounded-3xl shadow-xl border border-sst">
       <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div class="bg-primary text-white px-8 py-3 rounded-full shadow-lg">
+        <div class=" text-primary bg-dark-200 px-8 py-3 rounded-full shadow-lg">
           <h2 class="text-xl font-semibold">Send us a Message</h2>
         </div>
       </div>
@@ -51,7 +51,7 @@ const handleSubmit = async () => {
             </label>
             <div class="relative">
               <input v-model="form.firstName" type="text" id="firstName"
-                class="w-full px-6 py-3 rounded-xl border-2 border-gray-900 focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none transition-all bg-dark-950"
+                class="w-full text-secondary px-6 py-3 rounded-xl border-2 border-gray-900 focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none transition-all bg-dark-950"
                 required />
               <Icon name="mdi:account"
                 class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-primary transition-colors" />
@@ -65,7 +65,7 @@ const handleSubmit = async () => {
             </label>
             <div class="relative">
               <input v-model="form.lastName" type="text" id="lastName" placeholder="Optional"
-                class="w-full px-6 py-3 text-light placeholder:text-dark-900 rounded-xl border-2 border-gray-900 focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none transition-all bg-dark-950"
+                class="w-full px-6 py-3 text-secondary placeholder:text-dark-900 rounded-xl border-2 border-gray-900 focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none transition-all bg-dark-950"
                 required />
               <Icon name="mdi:account"
                 class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-primary transition-colors" />
@@ -80,7 +80,7 @@ const handleSubmit = async () => {
           </label>
           <div class="relative">
             <input v-model="form.email" type="email" id="email"
-              class="w-full px-6 py-3 rounded-xl border-2 border-gray-900 focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none transition-all bg-dark-950"
+              class="w-full px-6 py-3 text-secondary rounded-xl border-2 border-gray-900 focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none transition-all bg-dark-950"
               required />
             <Icon name="mdi:email"
               class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-primary transition-colors" />
@@ -94,7 +94,7 @@ const handleSubmit = async () => {
           </label>
           <div class="relative">
             <input v-model="form.phone" type="tel" id="phone"
-              class="w-full px-6 py-3 rounded-xl border-2 border-gray-900 focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none transition-all bg-dark-950" />
+              class="w-full px-6 py-3 text-secondary rounded-xl border-2 border-gray-900 focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none transition-all bg-dark-950" />
             <Icon name="mdi:phone"
               class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-primary transition-colors" />
           </div>
@@ -107,7 +107,7 @@ const handleSubmit = async () => {
           </label>
           <div class="relative">
             <select v-model="form.service" id="service"
-              class="w-full px-6 py-3 rounded-xl border-2 border-gray-900 focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none transition-all bg-dark-950 appearance-none">
+              class="text-primary w-full px-6 py-3 rounded-xl border-2 border-gray-900 focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none transition-all bg-dark-950 appearance-none">
               <option value="">Select a service</option>
               <option v-for="service in services" :key="service" :value="service">
                 {{ service }}
@@ -125,7 +125,7 @@ const handleSubmit = async () => {
           </label>
           <div class="relative">
             <textarea v-model="form.message" id="message" rows="4"
-              class="w-full px-6 py-3 rounded-xl border-2 border-gray-900 focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none transition-all bg-dark-950 resize-none"
+              class="w-full px-6 py-3 text-secondary rounded-xl border-2 border-gray-900 focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none transition-all bg-dark-950 resize-none"
               required></textarea>
             <Icon name="mdi:message-text"
               class="absolute right-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-primary transition-colors" />

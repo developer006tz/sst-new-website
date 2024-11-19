@@ -16,7 +16,7 @@
           </p>
           <NuxtLink 
             to="/contact-us"
-            class="inline-block bg-white text-primary px-8 py-3 rounded-lg hover:bg-light-100 transition-colors"
+            class="inline-block bg-white text-dark-950 font-sans font-semibold px-8 py-3 rounded-lg hover:bg-light-100 transition-colors"
           >
             {{ action.buttonLabel }}
           </NuxtLink>

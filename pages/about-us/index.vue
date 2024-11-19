@@ -3,11 +3,10 @@
     <CorePageHeading 
       blackTitle="About"
       blueTitle="SocialSmartTech"
-      description="Pioneering innovative software solutions to transform businesses since 2020"
+      description="Pioneering innovative software solutions to transform businesses since 2019"
     />
      <UiAboutOurStory />
      <UiAboutOurValues />
-     <!-- <UiAboutOurTeam /> -->
      <UiAboutStats />
      <UiAboutTimeline />
      <UiAboutTestimonials />

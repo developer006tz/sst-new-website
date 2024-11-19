@@ -10,12 +10,18 @@
 
       <!-- Desktop Menu -->
       <div class="hidden md:flex items-center space-x-8">
-        <NuxtLink v-for="item in navItems" :key="item.path" :to="item.path"
-          class="font-medium text-white hover:text-primary transition-colors duration-200">
+        <NuxtLink 
+          v-for="item in navItems" 
+          :key="item.path" 
+          :to="item.path"
+          class="font-medium hover:text-primary transition-colors duration-200"
+          :class="{ 'text-primary bg-primary/5 rounded-full px-3 py-1': route.path === item.path, 'text-light': route.path !== item.path }"
+        >
           {{ item.name }}
-        </NuxtLink>
-        <NuxtLink :to="'contact-us'" class="btn bg-primary text-white px-6 py-2 rounded-full 
-                 hover:bg-primary-600 transition-colors duration-200">
+       </NuxtLink>
+        <NuxtLink :to="'contact-us'" class="btn  px-6 py-2 rounded-full 
+                 hover:bg-primary-600 transition-colors duration-200"
+                 :class="{ 'bg-light text-primary': route.path === '/contact-us', 'bg-primary text-white': route.path !== '/contact-us'}">
           Contact Us
         </NuxtLink>
       </div>
@@ -100,22 +106,5 @@ onBeforeUnmount(() => {
 /* Base styles */
 .menu-open {
   overflow: hidden;
-}
-
-/* Force hardware acceleration for smoother animations */
-header {
-  will-change: transform;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-}
-
-/* Ensure backdrop-filter works consistently across browsers */
-@supports (backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px)) {
-  nav {
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
-  }
 }
 </style>

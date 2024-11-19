@@ -10,24 +10,23 @@
       <div class="container">
         <div class="grid lg:grid-cols-2 gap-12">
          <UiContactForm />
-          <div 
-            v-motion="slide_left"
-            class="space-y-8"
-          >
-            <UiContactInformation />
-          </div>
+         <UiContactInformation />
         </div>
       </div>
     </section>
 
-    <UiContactMapSection />
+    <!-- <UiContactMapSection /> -->
+    <CoreCalltoAction :action="callToActionData" />
 </template>
 
 <script setup lang="ts">
-import { fade_in, hero_text, slide_left, slide_right } from '~/lib/motions';
+import type { CallToAction } from '~/types';
 
-
-
-
+const callToActionData: CallToAction = {
+  title: 'Ready to Work Together??',
+  description: 'Let\'s discuss how we can help you achieve your business goals',
+  buttonLabel: 'Don\'t hesitate to reach out',
+  style: 'bg-gradient-to-t from-dark-950 to-primary-500'
+};
 
 </script>
