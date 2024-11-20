@@ -4,7 +4,7 @@ export const bgImage = "https://cdn.prod.website-files.com/6700ee976677a42722839
 export const techStackMackbookFrame = "/images/tech-stack.svg";
 export const techBackground = "https://cdn.prod.website-files.com/6700ee976677a42722839678/6703a3c52bf5fa97ae45d72e_7.avif";
 
-export const logisticsManagementImg = "/images/projects/shipping-management.png";
-export const conveyanceImg = "/images/projects/conveyance-logistics.png";
-export const kapingaDesignsImg = "/images/projects/kapinga-designs.png";
-export const myDoctorImg = "/images/projects/my-doctor-24-hrs.png";
+export const logisticsManagementImg = "https://res.cloudinary.com/dcmwnrvzk/image/upload/v1732083018/shipping-management_p5k3fl.avif";
+export const conveyanceImg = "https://res.cloudinary.com/dcmwnrvzk/image/upload/v1732083019/conveyance-logistics_feypzq.avif";
+export const kapingaDesignsImg = "https://res.cloudinary.com/dcmwnrvzk/image/upload/v1732083018/kapinga-designs_fr1r8a.avif";
+export const myDoctorImg = "https://res.cloudinary.com/dcmwnrvzk/image/upload/v1732083018/my-doctor-24-hrs_ak0bva.avif";

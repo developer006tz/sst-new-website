@@ -28,7 +28,7 @@
                 <div v-if="project" class="relative">
                   <!-- Project Image -->
                   <div class="relative aspect-[4/3] p-2">
-                    <NuxtImg :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
+                    <NuxtImg preload :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
                   </div>
   
                   <!-- Content -->
