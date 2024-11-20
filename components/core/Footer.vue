@@ -20,7 +20,7 @@ const pageLinks: PageLinks[] = [
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Company Info -->
           <div class="space-y-6">
-            <NuxtImg :src="logoHorizontal" />
+            <NuxtImg :src="logoHorizontal" :alt="'SocialSmartTech Logo'" />
             <p class="text-sm leading-relaxed">
               Pioneering innovative software solutions to transform businesses since 2020. We help businesses across East Africa leverage technology to achieve their goals.
             </p>

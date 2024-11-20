@@ -18,36 +18,64 @@
           :class="{ 'text-primary bg-primary/5 rounded-full px-3 py-1': route.path === item.path, 'text-light': route.path !== item.path }"
         >
           {{ item.name }}
-       </NuxtLink>
-        <NuxtLink :to="'contact-us'" class="btn  px-6 py-2 rounded-full 
-                 hover:bg-primary-600 transition-colors duration-200"
-                 :class="{ 'bg-light text-primary': route.path === '/contact-us', 'bg-primary text-white': route.path !== '/contact-us'}">
+        </NuxtLink>
+        <NuxtLink 
+          :to="'contact-us'" 
+          class="btn px-6 py-2 rounded-full hover:bg-primary-600 transition-colors duration-200"
+          :class="{ 'bg-light text-primary': route.path === '/contact-us', 'bg-primary text-white': route.path !== '/contact-us'}"
+        >
           Contact Us
         </NuxtLink>
       </div>
 
       <!-- Mobile Menu Button -->
-      <button @click="toggleMenu" class="md:hidden p-2 text-dark-500 hover:text-primary transition-colors"
-        aria-label="Toggle menu">
-        <Icon :name="isMenuOpen ? 'mdi:close' : 'mdi:menu'" class="w-6 h-6" />
+      <button 
+        @click.stop="toggleMenu"
+        data-menu-toggle
+        class="md:hidden p-2 text-dark-500 hover:text-primary transition-colors"
+        aria-label="Toggle menu"
+      >
+        <Icon 
+          :name="isMenuOpen ? 'mdi:close' : 'mdi:menu'" 
+          class="w-6 h-6"
+          data-menu-toggle 
+        />
       </button>
     </nav>
 
     <!-- Mobile Menu -->
-    <Transition enter-active-class="transition duration-200 ease-out" enter-from-class="opacity-0 -translate-y-4"
-      enter-to-class="opacity-100 translate-y-0" leave-active-class="transition duration-150 ease-in"
-      leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-4">
-      <div v-if="isMenuOpen" v-click-outside="closeMenu" class="md:hidden absolute top-full left-0 w-full 
-               bg-dark-950/90 backdrop-blur-md
-               shadow-lg border-t border-dark-900">
+    <Transition 
+      enter-active-class="transition duration-200 ease-out" 
+      enter-from-class="opacity-0 -translate-y-4"
+      enter-to-class="opacity-100 translate-y-0" 
+      leave-active-class="transition duration-150 ease-in"
+      leave-from-class="opacity-100 translate-y-0" 
+      leave-to-class="opacity-0 -translate-y-4"
+    >
+      <div 
+        v-if="isMenuOpen" 
+        v-click-outside="closeMenu" 
+        class="md:hidden absolute top-full left-0 w-full bg-dark-950/90 backdrop-blur-md
+               shadow-lg border-t border-dark-900"
+      >
         <div class="container mx-auto py-4 space-y-4 px-4">
-          <NuxtLink v-for="item in navItems" :key="item.path" :to="item.path" class="block font-medium text-dark-500 hover:text-primary 
-                   transition-colors duration-200 py-2" @click="closeMenu" v-motion="slide_left">
+          <NuxtLink 
+            v-for="item in navItems" 
+            :key="item.path" 
+            :to="item.path" 
+            class="block font-medium text-dark-500 hover:text-primary transition-colors duration-200 py-2" 
+            @click="closeMenu"
+            v-motion="slide_left"
+          >
             {{ item.name }}
           </NuxtLink>
-          <NuxtLink :to="'contact-us'" class="block w-full btn bg-primary text-white px-6 py-2 
-                   rounded-lg hover:bg-primary-600 
-                   transition-colors duration-200 text-center" @click="closeMenu" v-motion="bounce_in">
+          <NuxtLink 
+            :to="'contact-us'" 
+            class="block w-full btn bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-600 
+                   transition-colors duration-200 text-center" 
+            @click="closeMenu" 
+            v-motion="bounce_in"
+          >
             Contact Us
           </NuxtLink>
         </div>
@@ -79,7 +107,8 @@ const navItems: NavItem[] = [
 ];
 
 // Methods
-const toggleMenu = () => {
+const toggleMenu = (event: Event) => {
+  event.stopPropagation(); // Prevent the click from bubbling
   isMenuOpen.value = !isMenuOpen.value;
   document.body.classList.toggle('menu-open', isMenuOpen.value);
 };

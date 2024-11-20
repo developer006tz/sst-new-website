@@ -10,7 +10,7 @@
                 <Icon :name="feature.icon" class="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h4 class="font-semibold text-light mb-2">{{ feature.title }}</h4>
+                <h3 class="font-semibold text-xl text-light mb-2">{{ feature.title }}</h3>
                 <p class="text-dark-500">{{ feature.description }}</p>
               </div>
             </div>
