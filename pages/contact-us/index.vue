@@ -49,14 +49,12 @@ const callToActionData: CallToAction = {
 
     <section class="py-20">
       <div class="container">
-        <div class="grid lg:grid-cols-2 gap-12">
+        <div class="grid lg:grid-cols-2 gap-6 md:gap-12">
          <UiContactForm />
          <UiContactInformation />
         </div>
       </div>
     </section>
-
-    <!-- <UiContactMapSection /> -->
     <CoreCalltoAction :action="callToActionData" />
 </template>
 

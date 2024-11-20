@@ -29,16 +29,16 @@ const handleSubmit = async () => {
 </script>
 
 <template>
-  <div v-motion="slide_right" class="relative">
+  <div v-motion="slide_right" class="relative w-[80%] md:w-full ">
     <!-- Decorative background elements -->
     <div class="absolute inset-0 bg-gradient-to-br from-primary/40 to-secondary/40 rounded-3xl"></div>
     <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/40 rounded-full blur-3xl"></div>
     <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary/40 rounded-full blur-3xl"></div>
 
-    <div class="relative bg-dark-950/90 backdrop-blur-xl p-8 md:p-12 rounded-3xl shadow-xl border border-sst">
+    <div class="relative  bg-dark-950/90 backdrop-blur-xl p-4 sm:p-8 md:p-12 rounded-3xl shadow-xl border border-sst">
       <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div class=" text-primary bg-dark-200 px-8 py-3 rounded-full shadow-lg">
-          <h2 class="text-xl font-semibold">Send us a Message</h2>
+        <div class=" text-primary bg-dark-200 min-w-[250px] text-center px-8 py-3 rounded-full shadow-lg">
+          <h2 class="text-sm  md:text-xl font-semibold">Send us a Message</h2>
         </div>
       </div>
 

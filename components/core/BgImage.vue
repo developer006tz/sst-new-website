@@ -4,6 +4,7 @@ import { bgImage } from '~/stores/images';
 
 <template>
   <NuxtImg 
+    provider="cloudinary"
     :src="bgImage"
     alt="Hero Section BG Lines"
     sizes="sm:768px md:1024px lg:1425px xl:1920px 320px"
