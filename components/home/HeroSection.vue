@@ -32,8 +32,13 @@ import { fade_in, hero_text, slide_left, zoom_in } from '~/lib/motions';
                 <div v-motion="zoom_in" class="relative">
 
                     <NuxtImg
+                        provider="cloudinary"
                         src="https://res.cloudinary.com/dcmwnrvzk/image/upload/v1731598362/social-smarttech-logo_hvn5fr.png"
-                        alt="SocialSmartTech" class="relative w-full h-auto max-w-md mx-auto" />
+                        sizes="sm:448px md:448px lg:448px xl:448px 358px"
+                        placeholder
+                        alt="SocialSmartTech"
+                        class="relative w-full h-auto max-w-md mx-auto"
+                        />
                 </div>
             </div>
         </div>

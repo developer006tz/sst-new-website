@@ -125,4 +125,9 @@ export default defineNuxtConfig({
     cacheControl: 'max-age=14400, must-revalidate',
 
   },
+  image: {
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/dcmwnrvzk/image/upload/'
+    }
+  }
 })
