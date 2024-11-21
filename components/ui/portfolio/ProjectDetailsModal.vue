@@ -25,7 +25,7 @@
               leave-to="opacity-0 scale-95"
             >
               <DialogPanel class="w-full max-w-3xl bg-dark-950 rounded-2xl overflow-hidden">
-                <div v-if="project" class="relative">
+                <div v-if="project" class="relative pb-20">
                   <!-- Project Image -->
                   <div class="relative aspect-[4/3] p-2">
                     <NuxtImg preload :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
