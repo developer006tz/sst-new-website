@@ -1,5 +1,5 @@
 import type { Category, Project } from "~/types/portfolio";
-import { conveyanceImg, kapingaDesignsImg, logisticsManagementImg, myDoctorImg } from "./images";
+import { conveyanceImg, ctmclImg, kapingaDesignsImg, logisticsManagementImg, myDoctorImg } from "./images";
 
 export const projects: Project[] = [
     {
@@ -86,6 +86,28 @@ export const projects: Project[] = [
           "In app messaging system",
         ],
         category: "web-applications"
+    },
+    {
+      id: 5,
+      title: "Congo Tanzania Mining Consultancy",
+      shortDescription: "Providing innovative solutions and expert advice to mining companies and individuals in Tanzania",
+      description: "A dynamic website, with (CMS) for a mining consultancy company that provides expert advice and innovative solutions to mining companies and individuals in Tanzania.",
+      image: ctmclImg,
+      type: "Dynamic web application",
+      client: "CTML Co.Ltd",
+      duration: "2 Weeks",
+      technologies: ["Vue 3", "Nuxt js", "Tailwind CSS", "AzamPay", "Express js", "Supabase"],
+      link: "https://ctmcl.co.tz",
+      features: [
+        "Company profile presentation",
+        "Service presentation",
+        "Contact form",
+        "Payment Integration",
+        "Appointment booking",
+        "Email Templates",
+        "Admin Dashboard",
+      ],
+      category: "web-applications"
     }
   ];
 

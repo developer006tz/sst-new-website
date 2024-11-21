@@ -8,3 +8,4 @@ export const logisticsManagementImg = "https://res.cloudinary.com/dcmwnrvzk/imag
 export const conveyanceImg = "https://res.cloudinary.com/dcmwnrvzk/image/upload/v1732083019/conveyance-logistics_feypzq.avif";
 export const kapingaDesignsImg = "https://res.cloudinary.com/dcmwnrvzk/image/upload/v1732083018/kapinga-designs_fr1r8a.avif";
 export const myDoctorImg = "https://res.cloudinary.com/dcmwnrvzk/image/upload/v1732083018/my-doctor-24-hrs_ak0bva.avif";
+export const ctmclImg = "https://res.cloudinary.com/dcmwnrvzk/image/upload/v1732177578/ctmcl-project_pajmi3.avif";
