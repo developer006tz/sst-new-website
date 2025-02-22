@@ -18,7 +18,7 @@
             <div>
               <h3 class="font-semibold text-base md:text-lg text-primary group-hover:text-primary transition-colors">Our Location
               </h3>
-              <p class="text-dark-500 mt-2">POSTA MPYA, LIFE HOUSE 3rd Floor,<br />Dar es Salaam, Tanzania</p>
+              <p class="text-dark-500 mt-2">Tanzania Library Service Building, 3rd Floor,<br />Dar es Salaam, Tanzania</p>
               <a href="https://maps.google.com" target="_blank"
                 class="inline-flex items-center text-primary mt-3 hover:text-primary-600">
                 <span>Get Directions</span>

@@ -42,7 +42,7 @@ const pageLinks: PageLinks[] = [
             <ul class="space-y-3">
               <li class="flex items-start space-x-3">
                 <Icon name="mdi:map-marker" class="h-10 w-10 text-primary-400" />
-                <span>POSTA MPYA, LIFE HOUSE 3rd Floor, Dar es Salaam, Tanzania</span>
+                <span>Tanzania Library Service Building, 3rd Floor, Dar es Salaam, Tanzania</span>
               </li>
               <li class="flex items-center space-x-3">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-400" viewBox="0 0 20 20" fill="currentColor">
